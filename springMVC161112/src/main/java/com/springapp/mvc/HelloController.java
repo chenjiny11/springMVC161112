@@ -24,6 +24,7 @@ public class HelloController {
 	@RequestMapping(method = RequestMethod.GET, value = "/messageReturn")
 	public void messageReturn(HttpServletRequest request,Model model){
 		model.addAttribute("testOne","this is try");
+		model.addAttribute("testtwo","this is try two");
 		model.addAttribute("testTwo","the second params");
 	}
 
