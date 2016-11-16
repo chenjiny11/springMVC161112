@@ -1,0 +1,6 @@
+;var globalParam = {};
+
+$(function(){
+    debugger;
+
+});
