@@ -1,4 +1,4 @@
-package com.springapp.mvc;
+package com.springapp.mvc.controller;
 
 import com.sun.deploy.net.HttpRequest;
 import org.springframework.stereotype.Controller;

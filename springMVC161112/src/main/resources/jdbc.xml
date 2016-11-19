@@ -6,17 +6,7 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <context:component-scan base-package="com.springapp.mvc"/>
+        <context:property-placeholder location="classpath:jdbcParams.properties"/>
 
-
-
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/jsp/"/>
-        <property name="suffix" value=".jsp"/>
-    </bean>
-
-    <!--静态资源访问设置-->
-    <mvc:annotation-driven/>  <!--这个要加 不要不能识别-->
-    <mvc:resources  mapping="/resource/**" location="/resource/"/>
 
 </beans>
