@@ -8,8 +8,6 @@
 
     <context:component-scan base-package="com.springapp.mvc"/>
 
-
-
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
@@ -18,5 +16,6 @@
     <!--静态资源访问设置-->
     <mvc:annotation-driven/>  <!--这个要加 不然不能识别-->
     <mvc:resources  mapping="/resource/**" location="/resource/"/>
+    <import resource="classpath:jdbc.xml"/>
 
 </beans>

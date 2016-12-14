@@ -15,7 +15,16 @@
 <body>
 
 这里是页面
+<div class="showUser">
+
+  <input class="password" type="password" value="">
+</div>
 </body>
+
+<script>
+
+  var user=${user};
+</script>
 <script src="${path}/resource/js/jquery-1.8.3.min.js" ></script>
 <script src="${path}/resource/js/index.js" ></script>
 </html>
